@@ -1,0 +1,61 @@
+//- index.pug
+doctype html
+html
+  head
+    title SP Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png", alt="")
+                | SPDA
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            //- li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+    section#intro
+        div Welcome to Sourjya's Dance academy 
+        div.small Eat Sleep Dance Repeat
+    section#mission
+        h2 Our Mission
+        div.card 
+            h3 Dance perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/1.png", alt="")
+                div.card-content   
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum?
+
+        div.card 
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/2.png", alt="")
+                div.card-content   
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum?
+            
+        div.card 
+            h3 Expart teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/3.png", alt="")
+                div.card-content   
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsum?
+            
+    section#sponsor
+        h2 Our Sponsors
+        div#splogos 
+            img(src="/static/img/logo1.jpg", alt="Sponsor image" Class="spimg")
+            img(src="/static/img/logo2.jpg", alt="Sponsor image" Class="spimg")
+            img(src="/static/img/logo3.jpg", alt="Sponsor image" Class="spimg")
+            img(src="/static/img/logo4.jpg", alt="Sponsor image" Class="spimg")
+
+    footer#footer
+        | Copyright © 2020 SPDanceAcademy.com | All Rights Reserved
+
+
+    script
+      include ../static/script.js
